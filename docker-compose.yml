@@ -1,15 +1,15 @@
 
-# inventory:
-#   build: ./backend
-#   command: npm start
-#   ports:
-#     - "8080:8080"
-#   links:
-#     - mongodb
-#     - mongodb:mongodb.cloud66.local
-#   environment:
-#     - MONGO_URI='mongodb+srv://memosk8:Password123@cluster0.nuhhssx.mongodb.net/goals-app?retryWrites=true&w=majority'
-#     - PORT=5000
-#     - JWT_SECRET=r49i5t8u
-# mongodb:
-#   image: mongo
+ inventory:
+   build: ./backend
+   command: npm start
+   ports:
+     - "8080:8080"
+   links:
+     - mongodb
+     - mongodb:mongodb.cloud66.local
+   environment:
+     - MONGO_URI='mongodb+srv://memosk8:Password123@cluster0.nuhhssx.mongodb.net/goals-app?retryWrites=true&w=majority'
+     - PORT=5000
+     - JWT_SECRET=r49i5t8u
+ mongodb:
+   image: mongo
